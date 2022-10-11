@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #EBEEF1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .frame {
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7% 0;
+    gap: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #c9c9c9;
+    letter-spacing: .2rem;
+}
+
+.container .frame h1 {
+    color: #053251;
+    font-weight: bold;
+}
+
+.container .frame .inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .frame .inputs .task {
+    border: 2px solid #005FCC;
+    outline: #005FCC;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 3px 20px;
+    background-color: #F1F5F8;
+}
+
+.container .frame .inputs .submit-task {
+    font-size: 1.3rem;
+    background-color: #A5D5F9;
+    color: black;
+    border: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 13%;
+    cursor: pointer;
+}
+
+.container .frame .tasks {
+    display: block;
+    width: 75%;
+    font-size: 1.3rem;
+}
+
+.container .frame .tasks li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.container .frame .tasks li button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.container .frame .tasks li button i{
+    font-size: 1rem;
+}
+
+.container .frame .tasks li button i.fa.fa-check-square-o {
+    color: #6DE675;
+}
+
+.container .frame .tasks li button i.fa.fa-trash {
+    color: #E98385;
+}
+
+.container .frame .clearBtn {
+    border: 0;
+    background: none;
+    font-size: 1.3rem;
+    color: #E98385;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.disable {
+    display: none;
+}
